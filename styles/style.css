@@ -1,7 +1,3 @@
-body {
-  background-color: #f2f2f2;
-}
-
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -16,15 +12,16 @@ body {
 }
 
 .header {
+  height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
   padding-left: 64px;
-  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #f2f2f2;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -54,6 +51,7 @@ body {
   line-height: 25px;
   width: 388px;
   margin: 0;
+  padding-bottom: 30px;
 }
 
 .two_again {
@@ -75,5 +73,43 @@ body {
 }
 
 .description {
+  padding: 0 100px;
   margin-top: 100px;
+}
+
+.two_columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brief {
+  margin: 0;
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 400;
+  color: #2f80ed;
+}
+
+.main_text {
+  min-width: 784px;
+  width: 80%;
+}
+
+.paragraph {
+  margin: 0;
+  line-height: 34px;
+  font-size: 24px;
+}
+
+.paragraph:first-child {
+  padding-bottom: 30px;
+}
+
+.paragraph:last-child {
+  padding-top: 30px;
+}
+
+span {
+  font-weight: 600;
 }
