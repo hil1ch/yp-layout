@@ -116,7 +116,6 @@
 
 .digits {
   margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 .digits_title {
@@ -165,3 +164,57 @@
   line-height: 1.2;
   font-size: 18px;
 }
+
+.feynman {
+  padding-top: 100px;
+  position: relative;
+  height: 790px; /* Измените высоту по необходимости */
+  background-color: #f2f2f2;
+  overflow: hidden; /* Чтобы изображение не выходило за границы */
+}
+
+.feynman_title {
+  margin: 0 auto;
+  width: 648px;
+  margin-bottom: 70px;
+  text-align: center;
+  line-height: 115px;
+  font-size: 120px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.feynman_subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.feynman_link {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-80%);
+  text-align: center;
+  color: #2f80ed;
+  line-height: 51px;
+  font-size: 36px;
+  padding-right: 48px;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.feynman_img {
+  position: absolute;
+  width: 867px;
+  height: 637px;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+
