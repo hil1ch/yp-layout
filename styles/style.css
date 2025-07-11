@@ -11,6 +11,10 @@
   max-height: 756px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -169,9 +173,9 @@
 .feynman {
   padding-top: 100px;
   position: relative;
-  height: 790px; /* Измените высоту по необходимости */
+  height: 790px;
   background-color: #f2f2f2;
-  overflow: hidden; /* Чтобы изображение не выходило за границы */
+  overflow: hidden;
 }
 
 .feynman_title {
@@ -206,7 +210,6 @@
   font-size: 36px;
   padding-right: 48px;
   z-index: 1;
-  text-decoration: none;
 }
 
 .feynman_img {
@@ -224,6 +227,7 @@
   padding-top: 90px;
   padding-bottom: 90px;
   color: #fff;
+  overflow: hidden;
 }
 
 .kaufman_table {
@@ -247,13 +251,85 @@
   z-index: 0;
   width: 877px;
   height: 877px;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .footer {
+  position: relative;
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: #1f1f1f;
+  color: #fff;
 }
+
+.columns {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.columns_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.columns_img {
+  position: absolute;
+  padding-top: 60px;
+  top: 0;
+}
+
+.author {
+  margin-top: auto;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin: 0;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.author::before {
+  content: '©';
+  margin-right: 5px;
+}
+
+.column_heading {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.info_list, .social_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+.list_img {
+  margin-right: 10px;
+}
+
+.list_link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+
+
+
+
+
 
 
 
