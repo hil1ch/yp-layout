@@ -116,9 +116,10 @@
 
 .digits {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-.digits_title {
+.digits_title, .kaufman_title {
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -127,7 +128,7 @@
   margin-bottom: 20px;
 }
 
-.digits_subtitle {
+.digits_subtitle, .kaufman_subtitle {
   text-align: center;
   line-height: 34px;
   font-size: 24px;
@@ -216,5 +217,43 @@
   bottom: 0;
   z-index: 0;
 }
+
+.kaufman {
+  position: relative;
+  background-color: #1f1f1f;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  color: #fff;
+}
+
+.kaufman_table {
+  padding-top: 80px;
+  column-gap: 20px;
+}
+
+.kaufman_cell {
+  z-index: 1;
+  width: 200px;
+}
+
+.kaufman_cell:nth-child(4) {
+  margin-bottom: 80px;
+}
+
+.kaufman_img {
+  position: absolute;
+  top: 0;
+  right: -210px;
+  z-index: 0;
+  width: 877px;
+  height: 877px;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: #1f1f1f;
+}
+
 
 
